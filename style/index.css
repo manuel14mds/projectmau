@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +11,52 @@
     --color-three: #003366;
     --color-four: #FF6600;
 
-    /* thin-100, light-300, regular-400, medium-500, bold-700 */
-    /* --font: "Roboto", sans-serif;
-    font-family: var(--font); */
+    /* width 400 500 600 700 */
+    font-family: 'Rajdhani', sans-serif;
     }
+
+.navbar-brand{
+    font-weight: 700;
+}
+.home{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+.home_mainLogo{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.home_mainLogo_img{
+    width: 250px;
+    height: 120px;
+    /* background-color: aliceblue; */
+    background-image: url(../img/mainLogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    align-self: center;
+
+}
+.home_mainLogo_slogan{
+    font-weight: 600;
+}
+.home_carrousel{
+    /* background-color: beige; */
+    width: 100%;
+    height: auto;
+}
+/* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
+@media (min-width: 840px) {
+
+        /* .home{
+            flex-direction: row;
+            align-items: center;
+        } */
+}
