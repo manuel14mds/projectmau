@@ -14,49 +14,66 @@
     /* width 400 500 600 700 */
     font-family: 'Rajdhani', sans-serif;
     }
-
+.navbar{
+    background-color: var(--color-one) !important;
+}
 .navbar-brand{
     font-weight: 700;
+    color: white;
+}
+.nav-link{
+    color: white !important;
+}
+.navbar-toggler-icon{
+    color: white;
 }
 .home{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
-}
-.home_mainLogo{
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+    padding: 0px 15px;
 }
 .home_mainLogo_img{
-    width: 250px;
-    height: 120px;
-    /* background-color: aliceblue; */
+    width: 300px;
+    height: 160px;
     background-image: url(../img/mainLogo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-bottom: 15px;
     align-self: center;
-
 }
-.home_mainLogo_slogan{
-    font-weight: 600;
+.home_textPerson{
+    display: flex;
+    flex-direction: column;
 }
-.home_carrousel{
-    /* background-color: beige; */
+.home_mainLogo{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
 }
-/* ############################################################## MEDIA QUERY - Tablet 768px - ############################################################## */
+.home_mainLogo_slogan{
+    font-weight: 700;
+}
+.home_carrousel{
+    width: 100%;
+    height: auto;
+}
+/* ############################################################## MEDIA QUERY - 840px - ############################################################## */
 @media (min-width: 840px) {
+    .home_textPerson{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+/* ############################################################## MEDIA QUERY -  992px - ############################################################## */
+@media (min-width: 992px) {
+    .home_mainLogo_img{
+        width: 400px;
+        height: 200px;
+    }
+    .home_mainLogo_slogan{
+        font-size: 1.5rem;
+    }
 
-        /* .home{
-            flex-direction: row;
-            align-items: center;
-        } */
 }
